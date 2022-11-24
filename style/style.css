@@ -1,0 +1,109 @@
+/* Reset */
+body, article, h1, h2, h3, p, ul, li, div {
+    padding: initial;
+    margin: initial;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border-style: initial;
+    background-color: initial;
+}
+
+/* Utility */
+.ir {
+    position: absolute;
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Layout */
+#app {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 247px;
+    background-color: dodgerblue;
+}
+
+.tit-app {
+    width: 386px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tit-app .img-logo {
+    width: 100%;
+}
+
+.vending-machine {
+    background-color: yellow;
+}
+
+.list-item {
+    background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.btn-item {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-item .img-item {
+    width: 36px;
+}
+
+.cont-buy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.info-balance,
+.inp-insert,
+.list-item-staged {
+    grid-column: 1/3;
+}
+
+.list-item-staged .img-item {
+    width: 18px;
+}
+
+.my-info {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cont-mymoney {
+    background-color: blueviolet;
+    padding: 9px 27px;
+}
+
+.info-mymoney {
+    background-color: chartreuse;
+    padding: 6px 10px;
+}
+
+.cont-myitem {
+    background-color: beige;
+    padding: 25px 27px 26px;
+}
+
+.list-item-staged {
+    background-color: darkolivegreen;
+}
