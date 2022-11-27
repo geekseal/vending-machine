@@ -11,6 +11,11 @@ ul {
 button {
     border-style: initial;
     background-color: initial;
+    font-family: inherit;
+}
+
+input {
+    border-style: none;
 }
 
 /* Utility */
@@ -22,12 +27,19 @@ button {
     overflow: hidden;
 }
 
+/* Typo */
+:root {
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+}
+
 /* Layout */
 #app {
     display: flex;
     justify-content: center;
+    /* align-items: stretch; */
     gap: 28px;
-    padding: 247px;
+    padding-top: 247px;
     background-color: dodgerblue;
 }
 
@@ -43,8 +55,10 @@ button {
     width: 100%;
 }
 
+/* leftside */
 .vending-machine {
     background-color: yellow;
+    padding: 31px 27px 28px;
 }
 
 .list-item {
@@ -52,6 +66,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
+    margin-bottom: 20px;
 }
 
 .btn-item {
@@ -60,33 +75,81 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 6px;
+    padding: 10px 12px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
 }
 
 .btn-item .img-item {
     width: 36px;
 }
 
+.btn-item .txt-item-name {
+    font-size: 9px;
+}
+
+.btn-item .txt-item-price {
+    color: #FFFFFF;
+    font-size: 12px;
+    background-color: #6327FE;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
 .cont-buy {
+    background-color: darkcyan;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
+    
 }
 
 .info-balance,
 .inp-insert,
 .list-item-staged {
     grid-column: 1/3;
+    border-radius: 5px;
+}
+
+.inp-insert {
+    padding: 6px 6px 8px;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.btn-return,
+.btn-insert,
+.btn-get {
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cont-buy .info-balance {
+    background-color: #EAE8FE;
+    padding: 6px 10px 7px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.list-item-staged {
+    background-color: #EAE8FE;
+    height: 106px;
+    overflow: scroll;
 }
 
 .list-item-staged .img-item {
     width: 18px;
 }
 
+/* rightside */
 .my-info {
     background-color: tomato;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-shrink: 0;
 }
 
 .cont-mymoney {
@@ -104,6 +167,8 @@ button {
     padding: 25px 27px 26px;
 }
 
-.list-item-staged {
+.cont-myitem .list-item-staged {
     background-color: darkolivegreen;
+    height: 364px;
+    overflow: scroll;
 }
