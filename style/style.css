@@ -37,10 +37,9 @@ input {
 #app {
     display: flex;
     justify-content: center;
-    /* align-items: stretch; */
     gap: 28px;
-    padding-top: 247px;
-    background-color: dodgerblue;
+    padding: 247px 0;
+    background-color: #EAE8FE
 }
 
 .tit-app {
@@ -57,12 +56,11 @@ input {
 
 /* leftside */
 .vending-machine {
-    background-color: yellow;
+    background-color: #FFFFFF;
     padding: 31px 27px 28px;
 }
 
 .list-item {
-    background-color: brown;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
@@ -70,11 +68,11 @@ input {
 }
 
 .btn-item {
-    background-color: beige;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
     padding: 10px 12px;
     filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
     border-radius: 10px;
@@ -86,21 +84,24 @@ input {
 
 .btn-item .txt-item-name {
     font-size: 9px;
+    line-height: 13px;
 }
 
 .btn-item .txt-item-price {
     color: #FFFFFF;
     font-size: 12px;
+    line-height: 12px;
     background-color: #6327FE;
-    padding: 5px 15px;
+    padding: 5px 0;
+    width: 70px;
     border-radius: 50px;
 }
 
+/* leftside - cont-buy */
 .cont-buy {
-    background-color: darkcyan;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
+    gap: 11px;
     
 }
 
@@ -111,10 +112,22 @@ input {
     border-radius: 5px;
 }
 
+.cont-buy .info-balance {
+    background-color: #EAE8FE;
+    padding: 6px 10px 7px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.info-balance .txt-balance {
+    float: right;
+}
+
 .inp-insert {
     padding: 6px 6px 8px;
     font-size: 13px;
     line-height: 19px;
+    border: 1px solid #BDBDBD;
 }
 
 .btn-return,
@@ -124,19 +137,51 @@ input {
     background-color: #FFFFFF;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 13px;
+    line-height: 19px;
 }
 
-.cont-buy .info-balance {
-    background-color: #EAE8FE;
-    padding: 6px 10px 7px;
-    font-size: 14px;
-    line-height: 20px;
+.btn-get {
+    background-color: #6327FE;
+    color: #FFFFFF;
 }
 
 .list-item-staged {
     background-color: #EAE8FE;
     height: 106px;
     overflow: scroll;
+    padding: 12px 18px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-sizing: border-box;
+    border: 1px solid #BDBDBD;
+}
+
+.list-item-staged .btn-staged {
+    background-color: #FFFFFF;
+    display: block;
+    padding: 8px;
+    width: 100%;
+    text-align: initial;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-item-staged .txt-item {
+    font-size: 9px;
+    line-height: 13px;
+}
+
+.list-item-staged .num-counter {
+    padding: 4px 11px 6px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .list-item-staged .img-item {
@@ -145,7 +190,6 @@ input {
 
 /* rightside */
 .my-info {
-    background-color: tomato;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -153,22 +197,54 @@ input {
 }
 
 .cont-mymoney {
-    background-color: blueviolet;
+    background-color: #FFFFFF;
     padding: 9px 27px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .info-mymoney {
-    background-color: chartreuse;
+    background-color: #EAE8FE;
     padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.info-mymoney .txt-mymoney {
+    float: right;
 }
 
 .cont-myitem {
-    background-color: beige;
+    background-color: #FFFFFF;
     padding: 25px 27px 26px;
+    flex-grow: 1;
+}
+
+.cont-myitem .tit-myitem {
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    margin-bottom: 13px;
 }
 
 .cont-myitem .list-item-staged {
-    background-color: darkolivegreen;
     height: 364px;
-    overflow: scroll;
+    margin-bottom: 6px;
+}
+
+.cont-myitem .list-item-staged li {
+    background-color: #FFFFFF;
+    width: 276px;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cont-myitem .txt-money-spent {
+    font-size: 12px;
+    line-height: 20px;
+    float: right;
 }
