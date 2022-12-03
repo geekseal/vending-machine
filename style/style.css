@@ -12,6 +12,7 @@ button {
     border-style: initial;
     background-color: initial;
     font-family: inherit;
+    cursor: pointer;
 }
 
 input {
@@ -38,7 +39,7 @@ input {
     display: flex;
     justify-content: center;
     gap: 28px;
-    padding: 247px 0;
+    padding: 247px 0 160px;
     background-color: #EAE8FE
 }
 
