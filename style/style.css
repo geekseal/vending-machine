@@ -68,6 +68,19 @@ input {
     margin-bottom: 20px;
 }
 
+.btn-item.sold-out::after {
+    content: '품절입니다';
+    position: absolute;
+    color: transparent;
+    background: rgba(0, 0, 0, 0.8) url(../img/Sold-out.png) no-repeat center / 58px 45px;
+    inset: 0;
+    border-radius: 10px;
+}
+
+.btn-item.sold-out {
+    pointer-events: none;
+}
+
 .btn-item {
     background-color: #FFFFFF;
     display: flex;
