@@ -1,5 +1,4 @@
 import addComma from "./util/addComma.mjs";
-import deleteComma from "./util/deleteComma.mjs";
 
 const $vendingMachine = document.querySelector(".vending-machine");
 const $listItem = $vendingMachine.querySelector(".list-item");
