@@ -81,6 +81,10 @@ input {
     pointer-events: none;
 }
 
+.btn-item.selected {
+    outline: 3px solid #6327FE;
+}
+
 .btn-item {
     background-color: #FFFFFF;
     display: flex;
@@ -208,6 +212,7 @@ input {
     flex-direction: column;
     gap: 20px;
     flex-shrink: 0;
+    width: 360px;
 }
 
 .cont-mymoney {
